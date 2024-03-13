@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7128a31c7c52b144686ad22e3fe10d1d, type: 3}
+  m_Name: RTX 4090
+  m_EditorClassIdentifier: 
+  name: ASUS ROG Strix NVIDIA GeForce RTX 4090
+  description: 'Technology : GDDR6X
+
+    Video Memory : 24 GB
+
+    Max Resolution
+    : 7680 x 4320
+
+    Power Required : 1000 W'
+  price: 2649.99
+  image: {fileID: 21300000, guid: 455a3c57162791b4ca4305554bcdcce2, type: 3}
+  prefab: {fileID: 4283598070105406227, guid: cff1dc7ce60ba9a4ea18a1fc292baea6, type: 3}

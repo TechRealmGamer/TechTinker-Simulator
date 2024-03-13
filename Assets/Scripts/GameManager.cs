@@ -5,13 +5,14 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager INSTANCE;
+    public Camera mainCamera;
+    public Camera playerComputerCamera;
 
     private void Awake()
     {
-        if(INSTANCE == null)
-            INSTANCE = this;
-        else
+        if(INSTANCE != null && INSTANCE != this)
             Destroy(gameObject);
+        INSTANCE = this;            
     }
 
     public static void SetCursorVisibility(bool check)
