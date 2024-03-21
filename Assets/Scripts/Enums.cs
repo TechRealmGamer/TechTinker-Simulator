@@ -10,6 +10,9 @@ public enum ComputerPartType
     Motherboard,
     PowerSupply,
     Case,
-    Storage,
+    HDD,
+    SSD,
+    M2SSD,
+    Fan,
     Misc
 }

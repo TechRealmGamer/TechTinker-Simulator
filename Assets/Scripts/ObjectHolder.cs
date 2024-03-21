@@ -41,14 +41,22 @@ public class ObjectHolder : MonoBehaviour, Highlight
         // If the computer part is not appropriate for the holder, give error message
         if (objectType != obj.GetComponent<ComputerPart>().partType)
         {
-            Debug.Log("This Part does not fit here");
+            UIManager.INSTANCE.DisplayErrorMessage("This Part does not fit here");
             return false;
         }
 
         // If the holder is empty and the part is appropriate, hold the part
+        Vector3 scale = obj.localScale;
+        scale.x /= transform.localScale.x;
+        scale.y /= transform.localScale.y;
+        scale.z /= transform.localScale.z;
+
         obj.SetParent(transform);
         obj.localPosition = Vector3.zero;
         obj.localRotation = Quaternion.identity;
+        obj.localScale = scale;
+
+        GetComponent<Collider>().enabled = false;
         return true;
     }
 }

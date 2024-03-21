@@ -50,7 +50,9 @@ public class ObjectHandling : MonoBehaviour
                 grabbedObject = selectedObject;
                 grabbedObject.SetParent(grabOffset.transform);
                 grabbedObject.localPosition = Vector3.zero;
-                grabbedObject.localRotation = Quaternion.identity;
+
+                if(grabbedObject.parent.TryGetComponent<ObjectHolder>(out ObjectHolder holder))
+                    holder.GetComponent<Collider>().enabled = true;
             }
 
             // If the player clicks on a computer part holder, try to place the part

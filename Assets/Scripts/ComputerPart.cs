@@ -11,7 +11,7 @@ public class ComputerPart : MonoBehaviour, Highlight
 
     private void Start()
     {
-        outlineRenderer = CreateOutline();
+        //outlineRenderer = CreateOutline();
     }
 
     Renderer CreateOutline()
@@ -33,6 +33,6 @@ public class ComputerPart : MonoBehaviour, Highlight
 
     public void SetHighlighter(bool check)
     {
-        outlineRenderer.enabled = check;
+        //outlineRenderer.enabled = check;
     }
 }
