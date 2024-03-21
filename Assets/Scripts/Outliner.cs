@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Outliner : MonoBehaviour
+public class Outliner : MonoBehaviour, Highlight
 {
     [SerializeField] private Material outlineMaterial;
     [SerializeField] private float outlineScaleFactor;
@@ -32,7 +32,7 @@ public class Outliner : MonoBehaviour
         return rend;
     }
 
-    public void SetOutline(bool check)
+    public void SetHighlighter(bool check)
     {
         outlineRenderer.enabled = check;
     }

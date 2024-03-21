@@ -1,13 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 public class ObjectHandling : MonoBehaviour
 {
     [SerializeField] private LayerMask layerMask;
     [SerializeField] private float distance;
-
     [SerializeField] private Transform grabOffset;
 
     private Camera mainCamera;
@@ -23,7 +21,7 @@ public class ObjectHandling : MonoBehaviour
     {
         if(selectedObject != null)
         {
-            selectedObject.GetComponent<Outliner>().SetOutline(false);
+            selectedObject.GetComponent<Highlight>().SetHighlighter(false);
             selectedObject = null;
         }
 
@@ -33,10 +31,13 @@ public class ObjectHandling : MonoBehaviour
         if (Physics.Raycast(ray, out hit, distance, layerMask))
         {
             selectedObject = hit.transform;
-            selectedObject.GetComponent<Outliner>().SetOutline(true);
+            selectedObject.GetComponent<Highlight>().SetHighlighter(true);
+
+            if(!Input.GetMouseButtonDown(0))
+                return;
 
             // If the player clicks on the computer, switch to the player computer camera
-            if (selectedObject.name == "Player Computer" && Input.GetMouseButtonDown(0))
+            if (selectedObject.name == "Player Computer")
             {
                 GameManager.INSTANCE.playerComputerCamera.enabled = true;
                 mainCamera.enabled = false;
@@ -44,19 +45,19 @@ public class ObjectHandling : MonoBehaviour
             }
 
             // If the player clicks on a computer part, grab it
-            if (grabbedObject == null && selectedObject.CompareTag("Computer Part") && Input.GetMouseButtonDown(0))
+            else if (grabbedObject == null && selectedObject.CompareTag("Computer Part"))
             {
                 grabbedObject = selectedObject;
                 grabbedObject.SetParent(grabOffset.transform);
                 grabbedObject.localPosition = Vector3.zero;
                 grabbedObject.localRotation = Quaternion.identity;
             }
-            if (grabbedObject != null && Input.GetMouseButtonDown(0) && selectedObject.CompareTag("Computer Part Holder"))
+
+            // If the player clicks on a computer part holder, try to place the part
+            else if (grabbedObject != null && Input.GetMouseButtonDown(0) && selectedObject.TryGetComponent<ObjectHolder>(out ObjectHolder holder))
             {
-                grabbedObject.SetParent(selectedObject);
-                grabbedObject.localPosition = Vector3.zero;
-                grabbedObject.localRotation = Quaternion.identity;
-                grabbedObject = null;
+                if(holder.HoldObject(grabbedObject))
+                    grabbedObject = null;
             }
         }
     }
