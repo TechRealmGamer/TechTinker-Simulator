@@ -871,7 +871,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normalMaterial: {fileID: 2100000, guid: b026e59c6a1806b4e9e30f76e06976d0, type: 2}
   highlightMaterial: {fileID: 2100000, guid: 9e59b258ef3f9e0488b62ba0e0bdc375, type: 2}
-  objectType: 0
+  objectType: 2
   isHoldingObject: 0
 --- !u!1 &1880052368282917864
 GameObject:
@@ -1742,7 +1742,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normalMaterial: {fileID: 2100000, guid: b026e59c6a1806b4e9e30f76e06976d0, type: 2}
   highlightMaterial: {fileID: 2100000, guid: 9e59b258ef3f9e0488b62ba0e0bdc375, type: 2}
-  objectType: 0
+  objectType: 8
   isHoldingObject: 0
 --- !u!1 &3428715831871158425
 GameObject:
@@ -1947,7 +1947,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normalMaterial: {fileID: 2100000, guid: b026e59c6a1806b4e9e30f76e06976d0, type: 2}
   highlightMaterial: {fileID: 2100000, guid: 9e59b258ef3f9e0488b62ba0e0bdc375, type: 2}
-  objectType: 0
+  objectType: 2
   isHoldingObject: 0
 --- !u!1 &4559623855824344021
 GameObject:
@@ -1977,7 +1977,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 553862382942777491}
@@ -2055,6 +2055,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49f140d4b3c799540ba5cf67e347b421, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  componentID: 401
   partType: 3
   outlineMaterial: {fileID: 2100000, guid: 190bd80601c0b2c41a98941c723a253b, type: 2}
 --- !u!1 &4564800520928784996
@@ -2177,7 +2178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normalMaterial: {fileID: 2100000, guid: b026e59c6a1806b4e9e30f76e06976d0, type: 2}
   highlightMaterial: {fileID: 2100000, guid: 9e59b258ef3f9e0488b62ba0e0bdc375, type: 2}
-  objectType: 0
+  objectType: 2
   isHoldingObject: 0
 --- !u!1 &4879196730402875807
 GameObject:
@@ -2548,7 +2549,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normalMaterial: {fileID: 2100000, guid: b026e59c6a1806b4e9e30f76e06976d0, type: 2}
   highlightMaterial: {fileID: 2100000, guid: 9e59b258ef3f9e0488b62ba0e0bdc375, type: 2}
-  objectType: 0
+  objectType: 2
   isHoldingObject: 0
 --- !u!1 &6581443536905679161
 GameObject:

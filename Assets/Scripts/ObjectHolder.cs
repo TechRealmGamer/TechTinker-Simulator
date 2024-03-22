@@ -50,13 +50,28 @@ public class ObjectHolder : MonoBehaviour, Highlight
         scale.x /= transform.localScale.x;
         scale.y /= transform.localScale.y;
         scale.z /= transform.localScale.z;
+        scale *= 2;
 
         obj.SetParent(transform);
         obj.localPosition = Vector3.zero;
         obj.localRotation = Quaternion.identity;
         obj.localScale = scale;
 
+        if (GetComponentInParent<Computer>())
+        {
+            GetComponentInParent<Computer>().computerParts.Add(obj.GetComponent<ComputerPart>());
+        }
+
         GetComponent<Collider>().enabled = false;
         return true;
+    }
+
+    public void ReleaseObject()
+    {
+        GetComponent<Collider>().enabled = true;
+        if (GetComponentInParent<Computer>())
+        {
+            GetComponentInParent<Computer>().computerParts.Remove(transform.GetChild(0).GetComponent<ComputerPart>());
+        }
     }
 }

@@ -9,12 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47e1933b247e3ca48b8a681161ac3753, type: 3}
-  m_Name: Order 1
+  m_Script: {fileID: 11500000, guid: 7128a31c7c52b144686ad22e3fe10d1d, type: 3}
+  m_Name: RAM DDR4 8GB
   m_EditorClassIdentifier: 
-  orderID: 1351
-  emailSender: mail@google.com
-  emailSubject: Gaming Computer
-  emailMessage: Build a computer for me with Intel I9 and RTX 4090
-  budget: 2500
-  parts: []
+  type: 2
+  name: TridentZ DDR4 8GB
+  description: 
+  price: 0
+  image: {fileID: 0}
+  prefab: {fileID: 886427132350202178, guid: 362e377a9226c7e43a773a9ad31b66f6, type: 3}

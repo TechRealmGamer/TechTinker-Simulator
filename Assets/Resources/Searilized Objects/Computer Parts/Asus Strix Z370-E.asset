@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7128a31c7c52b144686ad22e3fe10d1d, type: 3}
-  m_Name: Part
+  m_Name: Asus Strix Z370-E
   m_EditorClassIdentifier: 
-  name: 
+  type: 3
+  partID: 401
+  name: Asus Strix Z370-E Gaming Motherboard
   description: 
   price: 0
   image: {fileID: 0}
-  prefab: {fileID: 0}
+  prefab: {fileID: 4559623855824344021, guid: 78386650a99eca847b6e632cebc661c9, type: 3}

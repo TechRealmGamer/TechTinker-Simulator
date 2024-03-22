@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47e1933b247e3ca48b8a681161ac3753, type: 3}
+  m_Name: Computer Prototype
+  m_EditorClassIdentifier: 
+  orderID: 1351
+  emailSender: mail@google.com
+  emailSubject: Gaming Computer
+  emailMessage: Build a computer for me with Intel I9 and RTX 4090
+  budget: 2500
+  partsRequired:
+  - {fileID: 11400000, guid: 52ea056a261d33d499cdc4f80399cdb9, type: 2}
+  - {fileID: 11400000, guid: a728a8d8a4ca6164dbb0104a44ed50b1, type: 2}
+  - {fileID: 11400000, guid: 8c32488b1f91c364a8ebe4f4563afdfe, type: 2}
+  - {fileID: 11400000, guid: 85e1361875dca3248b3cbc7ddaf7103f, type: 2}
+  - {fileID: 11400000, guid: 3b62d6aea49edee499a27c3cb01a7516, type: 2}
+  - {fileID: 11400000, guid: 273bf678900628146b683087286a8d0b, type: 2}
+  - {fileID: 11400000, guid: 9099ca8373d415b4082b03cf9f44b207, type: 2}

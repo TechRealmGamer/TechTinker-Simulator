@@ -234,5 +234,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49f140d4b3c799540ba5cf67e347b421, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  componentID: 101
   partType: 0
   outlineMaterial: {fileID: 2100000, guid: 190bd80601c0b2c41a98941c723a253b, type: 2}

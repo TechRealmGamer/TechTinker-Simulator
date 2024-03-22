@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7128a31c7c52b144686ad22e3fe10d1d, type: 3}
   m_Name: GTX 1660
   m_EditorClassIdentifier: 
+  type: 1
   name: MSI GTX 1660 SUPER VENTUS XS OC
   description: 'Technology : GDDR6X
 

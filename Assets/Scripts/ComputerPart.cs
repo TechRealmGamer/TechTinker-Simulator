@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ComputerPart : MonoBehaviour, Highlight
 {
+    public int componentID;
     public ComputerPartType partType;
 
     private Renderer outlineRenderer;

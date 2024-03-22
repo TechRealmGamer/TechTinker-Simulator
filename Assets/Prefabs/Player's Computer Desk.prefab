@@ -1865,7 +1865,7 @@ GameObject:
   - component: {fileID: 430967029958190286}
   - component: {fileID: 647571859923094811}
   m_Layer: 0
-  m_Name: Cooling Scroll View
+  m_Name: Case Scroll View
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4687,7 +4687,7 @@ GameObject:
   - component: {fileID: 1357233271089319183}
   - component: {fileID: 1082322713449353450}
   m_Layer: 0
-  m_Name: Cooling
+  m_Name: Case
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6253,7 +6253,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Cooling
+  m_text: Case
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

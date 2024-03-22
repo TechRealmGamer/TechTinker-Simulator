@@ -47,12 +47,12 @@ public class ObjectHandling : MonoBehaviour
             // If the player clicks on a computer part, grab it
             else if (grabbedObject == null && selectedObject.CompareTag("Computer Part"))
             {
+                if (selectedObject.parent.TryGetComponent<ObjectHolder>(out ObjectHolder holder))
+                    holder.ReleaseObject();
+
                 grabbedObject = selectedObject;
                 grabbedObject.SetParent(grabOffset.transform);
                 grabbedObject.localPosition = Vector3.zero;
-
-                if(grabbedObject.parent.TryGetComponent<ObjectHolder>(out ObjectHolder holder))
-                    holder.GetComponent<Collider>().enabled = true;
             }
 
             // If the player clicks on a computer part holder, try to place the part
