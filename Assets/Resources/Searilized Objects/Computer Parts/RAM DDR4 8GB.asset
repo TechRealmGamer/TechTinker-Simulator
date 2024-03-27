@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: RAM DDR4 8GB
   m_EditorClassIdentifier: 
   type: 2
-  name: TridentZ DDR4 8GB
+  name: TridentZ DDR4 8GB 3200 MHz
   description: 
   price: 0
   image: {fileID: 0}

@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.WSA;
 
 public class ObjectHolder : MonoBehaviour, Highlight
 {
@@ -63,12 +62,14 @@ public class ObjectHolder : MonoBehaviour, Highlight
         }
 
         GetComponent<Collider>().enabled = false;
+        GetComponent<Renderer>().enabled = false;
         return true;
     }
 
     public void ReleaseObject()
     {
         GetComponent<Collider>().enabled = true;
+        GetComponent<Renderer>().enabled = true;
         if (GetComponentInParent<Computer>())
         {
             GetComponentInParent<Computer>().computerParts.Remove(transform.GetChild(0).GetComponent<ComputerPart>());

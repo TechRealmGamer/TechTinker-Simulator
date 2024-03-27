@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: I7 9700K
   m_EditorClassIdentifier: 
   type: 0
-  name: I7 - 9700K
+  name: I7 - 9700K 3.6GHz
   description: 
   price: 0
   image: {fileID: 0}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Corsair 1000W PSU
   m_EditorClassIdentifier: 
   type: 4
-  name: Corsair 1000W
+  name: Corsair 1000W PSU
   description: 
   price: 0
   image: {fileID: 0}

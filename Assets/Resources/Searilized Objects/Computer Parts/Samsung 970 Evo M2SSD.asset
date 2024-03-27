@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Samsung 970 Evo M2SSD
   m_EditorClassIdentifier: 
   type: 8
-  name: Samsung 970 EVO
+  name: Samsung 970 EVO M2SSD
   description: 
   price: 0
   image: {fileID: 0}
