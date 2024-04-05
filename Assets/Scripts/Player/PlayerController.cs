@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     [Header("Movement")]
     public bool canMove = true;
     public float speed = 5f;
+    public float gravity = 20f;
 
     private CharacterController characterController;
 
@@ -32,6 +33,12 @@ public class PlayerController : MonoBehaviour
         float curSpeedX = canMove ? speed * Input.GetAxis("Vertical") : 0;
         float curSpeedY = canMove ? speed * Input.GetAxis("Horizontal") : 0;
         moveDirection = (forward * curSpeedX) + (right * curSpeedY);
+
+        // Apply gravity
+        if (!characterController.isGrounded)
+        {
+            moveDirection.y -= gravity;
+        }
 
         characterController.Move(moveDirection * Time.deltaTime);
         #endregion
