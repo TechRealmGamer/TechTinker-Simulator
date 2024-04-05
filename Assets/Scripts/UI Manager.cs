@@ -6,7 +6,6 @@ using TMPro;
 public class UIManager : MonoBehaviour
 {
     public static UIManager INSTANCE;
-
     public TMP_Text errorMessageText;
 
     private void Awake()
