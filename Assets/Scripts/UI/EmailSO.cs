@@ -34,7 +34,7 @@ public class EmailSO : ScriptableObject
             }
         }
 
-        message = "Congratulations!";
+        message = "Congratulations! You completed the order.";
         return true;
     }
 }

@@ -26,6 +26,8 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        canMove = Time.timeScale != 0;
+
         #region Handle Movement
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);

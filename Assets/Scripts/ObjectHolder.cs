@@ -45,16 +45,10 @@ public class ObjectHolder : MonoBehaviour, Highlight
         }
 
         // If the holder is empty and the part is appropriate, hold the part
-        Vector3 scale = obj.localScale;
-        scale.x /= transform.localScale.x;
-        scale.y /= transform.localScale.y;
-        scale.z /= transform.localScale.z;
-        scale *= 2;
-
         obj.SetParent(transform);
         obj.localPosition = Vector3.zero;
         obj.localRotation = Quaternion.identity;
-        obj.localScale = scale;
+        obj.localScale = obj.GetComponent<ComputerPart>().originalScale;
 
         if (GetComponentInParent<Computer>())
         {

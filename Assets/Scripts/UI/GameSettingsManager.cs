@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class GameSettingsManager : MonoBehaviour
 {
@@ -9,8 +11,7 @@ public class GameSettingsManager : MonoBehaviour
     [SerializeField] private GameObject graphicsPanel;
 
     [Header("Audio Settings")]
-    [SerializeField] private float musicVolume;
-    [SerializeField] private float sfxVolume;
+    [SerializeField] private AudioMixer audioMixer;
 
     [Header("Graphics Settings")]
     [SerializeField] private int resolutionIndex;
@@ -22,8 +23,23 @@ public class GameSettingsManager : MonoBehaviour
         animator = GetComponentInParent<Animator>();
     }
 
-    
+    public void SetMasterVolume(Slider slider)
+    {
+        audioMixer.SetFloat("volumeMaster", slider.value);
+    }
 
+    public void SetMusicVolume(Slider slider)
+    {
+        audioMixer.SetFloat("volumeBGM", slider.value);
+    }
 
-    
+    public void SetSFXVolume(Slider slider)
+    {
+        audioMixer.SetFloat("volumeSFX", slider.value);
+    }
+
+    public void SetUIVolume(Slider slider)
+    {
+        audioMixer.SetFloat("volumeUI", slider.value);
+    }
 }

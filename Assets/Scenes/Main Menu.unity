@@ -2945,8 +2945,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioPanel: {fileID: 401949897}
   graphicsPanel: {fileID: 1777938314}
-  musicVolume: 0
-  sfxVolume: 0
+  audioMixer: {fileID: 24100000, guid: 7df3e77a4822d6d42a76278c552ab480, type: 2}
   resolutionIndex: 0
 --- !u!1 &415078664
 GameObject:
@@ -3286,7 +3285,19 @@ MonoBehaviour:
   m_Value: -53.2
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 410984819}
+        m_TargetAssemblyTypeName: GameSettingsManager, Assembly-CSharp
+        m_MethodName: SetMusicVolume
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 422418885}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Slider, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &435461475
 GameObject:
   m_ObjectHideFlags: 0
@@ -7561,7 +7572,19 @@ MonoBehaviour:
   m_Value: -53.2
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 410984819}
+        m_TargetAssemblyTypeName: GameSettingsManager, Assembly-CSharp
+        m_MethodName: SetSFXVolume
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1251981289}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Slider, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1259440712
 GameObject:
   m_ObjectHideFlags: 0
@@ -9014,7 +9037,19 @@ MonoBehaviour:
   m_Value: -53.2
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 410984819}
+        m_TargetAssemblyTypeName: GameSettingsManager, Assembly-CSharp
+        m_MethodName: SetUIVolume
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1480322636}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Slider, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1562180787
 GameObject:
   m_ObjectHideFlags: 0
@@ -11408,8 +11443,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioPanel: {fileID: 1306659382}
   graphicsPanel: {fileID: 0}
-  musicVolume: 0
-  sfxVolume: 0
+  audioMixer: {fileID: 0}
   resolutionIndex: 0
 --- !u!1 &1867203505
 GameObject:
@@ -12563,7 +12597,19 @@ MonoBehaviour:
   m_Value: -53.2
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 410984819}
+        m_TargetAssemblyTypeName: GameSettingsManager, Assembly-CSharp
+        m_MethodName: SetMasterVolume
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1987874652}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Slider, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1993461649
 GameObject:
   m_ObjectHideFlags: 0

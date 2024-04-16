@@ -6,13 +6,17 @@ public class ComputerPart : MonoBehaviour, Highlight
 {
     public int componentID;
     public ComputerPartType partType;
+    public Sprite partImage;
 
     private Renderer outlineRenderer;
     [SerializeField] private Material outlineMaterial;
 
+    [HideInInspector] public Vector3 originalScale;
+
     private void Start()
     {
         //outlineRenderer = CreateOutline();
+        originalScale = transform.localScale;
     }
 
     Renderer CreateOutline()

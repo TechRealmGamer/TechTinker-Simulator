@@ -463,7 +463,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   componentID: 201
   partType: 1
+  partImage: {fileID: 21300000, guid: 574cb851f68fc6e43a99d1164134c40e, type: 3}
   outlineMaterial: {fileID: 2100000, guid: 190bd80601c0b2c41a98941c723a253b, type: 2}
+  originalScale: {x: 0, y: 0, z: 0}
 --- !u!1 &1677547502675490922
 GameObject:
   m_ObjectHideFlags: 0

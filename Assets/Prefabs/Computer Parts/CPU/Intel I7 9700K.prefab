@@ -236,4 +236,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   componentID: 101
   partType: 0
+  partImage: {fileID: 21300000, guid: fd2601bbd0237554a8a5d68e94b96e34, type: 3}
   outlineMaterial: {fileID: 2100000, guid: 190bd80601c0b2c41a98941c723a253b, type: 2}
+  originalScale: {x: 0, y: 0, z: 0}
